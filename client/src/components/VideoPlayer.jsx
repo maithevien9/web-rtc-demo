@@ -9,10 +9,24 @@ const VideoPlayer = () => {
     video: {
       width: '550px',
     },
+    myVideo: {
+      width: '300px',
+    },
     gridContainer: {
       justifyContent: 'center',
     },
-    paper: {
+    paper1: {
+      padding: '10px',
+      margin: '10px',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      bottom: 0,
+      right: 0,
+      position: 'fixed',
+    },
+
+    paper2: {
       padding: '10px',
       margin: '10px',
       display: 'flex',
@@ -21,7 +35,7 @@ const VideoPlayer = () => {
     },
 
     text: {
-      color: 'white',
+      color: 'black',
       fontSize: 28,
       fontWeight: 'bold',
       textAlign: 'center',
@@ -31,13 +45,13 @@ const VideoPlayer = () => {
   return (
     <div style={styles.gridContainer}>
       {stream && (
-        <div style={styles.paper}>
+        <div style={styles.paper1}>
           <p style={styles.text}>{name || 'Name'}</p>
-          <video playsInline muted ref={myVideo} autoPlay style={styles.video} />
+          <video playsInline muted ref={myVideo} autoPlay style={styles.myVideo} />
         </div>
       )}
       {callAccepted && !callEnded && (
-        <div style={styles.paper}>
+        <div style={styles.paper2}>
           <div>
             <p style={styles.text}>{call.name || 'Name'}</p>
             <video playsInline ref={userVideo} autoPlay style={styles.video} />

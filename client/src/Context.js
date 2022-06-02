@@ -29,7 +29,7 @@ const ContextProvider = ({ children }) => {
       setMe(id);
     });
 
-    socket.on('callUser', ({ from, name: callerName, signal }) => {
+    socket.on('videoCall', ({ from, name: callerName, signal }) => {
       setCall({ isReceivingCall: true, from, name: callerName, signal });
     });
   }, []);

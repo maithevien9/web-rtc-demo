@@ -19,12 +19,15 @@ const Sidebar = ({ children }) => {
       width: '100%',
     },
     container: {
-      width: '100%',
+      width: 1000,
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
       marginTop: 40,
+      position: 'fixed',
+      left: 0,
+      bottom: 0,
     },
     margin: {
       marginTop: 20,

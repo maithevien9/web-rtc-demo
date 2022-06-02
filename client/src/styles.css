@@ -1,6 +1,5 @@
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background: white;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
